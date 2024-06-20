@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacationer</title>
+    <link rel="shortcut icon" type="image/png" href="./img/favicon_globe.png" />
+    <link rel="stylesheet" href="./node_modules/lightbox2/dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="page-container">
+        <header class="header-image">
+            <div id="logo"><a href="index.html">Vacationer</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="info.html">INFO</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1 id="page-heading-info">ABOUT VACATIONER</h1>
+            </div>
+        </header>
+
+        <div class="info-container">
+            <div id="media-cont">
+                <h2>Video</h2>
+                <div>
+                    <video src="./video/vacationer_video_final.mp4" controls>
+                    </video>
+                </div>
+                <h3>Videon suunnittelumateriaali</h3>
+                <p>Klikkaamalla näet kuvat suurempina</p>
+                <br>
+                <div class="script-images-cont">
+
+                    <figure>
+                        <a class="example-image-link" href="./img/Kuvakasikirjoitus1.jpg" data-lightbox="script-set"
+                            data-title="Kuvakäsikirjoitus 1">
+                            <img class="example-image" src="./img/Kuvakasikirjoitus1_thumbnail.jpg"
+                                alt="Kuvakäsikirjoitus 1" />
+                        </a>
+                        <figcaption>Kuvakäsikirjoitus 1</figcaption>
+                    </figure>
+                    <figure>
+                        <a class="example-image-link" href="./img/Kuvakasikirjoitus2.jpg" data-lightbox="script-set"
+                            data-title="Kuvakäsikirjoitus 2">
+                            <img class="example-image" src="./img/Kuvakasikirjoitus2_thumbnail.jpg"
+                                alt="Kuvakäsikirjoitus 2" />
+                        </a>
+                        <figcaption>Kuvakäsikirjoitus 2</figcaption>
+                    </figure>
+                    <figure>
+                        <a class="example-image-link" href="./img/Kuvakasikirjoitus3.jpg" data-lightbox="script-set"
+                            data-title="Kuvakäsikirjoitus 3">
+                            <img class="example-image" src="./img/Kuvakasikirjoitus3_thumbnail.jpg"
+                                alt="Kuvakäsikirjoitus 3" />
+                        </a>
+                        <figcaption>Kuvakäsikirjoitus 3</figcaption>
+                    </figure>
+                </div>
+
+                <h2 id="audio-heading">Audio</h2>
+                <div id="audio">
+                    <audio src="./audio/vacationer_alkup.mp3" controls>
+                    </audio>
+                    <p>Muokkaamaton kertojaääni</p>
+                    <br>
+                    <audio src="./audio/vacationer_muokattu_final.mp3" controls>
+                    </audio>
+                    <p>Muokattu kertojaääni</p>
+                </div>
+
+                <div id="text-cont">
+                    <section>
+                            <h2>Mikä on Vacationer?</h2>
+                            <p>Vacationer on sovellus matkustuksesta kiinnostuneille. Sovelluksen avulla saat
+                                kätevästi muutamalla klikkauksella näkyviin valitsemasi maan perustiedot ja karttanäkymän. Etsit 
+                                vain maan alasvetovalikosta tai kirjoitat maan nimen ja painat Search-painiketta.
+                                Sovellus näyttää sinulle maan nimen alla maan pääkaupungin, viralliset kielet, rahayksikön
+                                sekä maan lipun. Näiden tietojen vieressä näet kartan, johon on paikannettu maa sen pääkaupungin perusteella.
+                            </p>
+                            <p>Kun maan perustiedot ja kartta ovat auenneet, voit kätevästi Show temperature -painiketta
+                                painamalla saada näkyviin seuraavien 7 päivän lämpötilaennusteet kyseisestä maasta.
+                                Lämpötilat näytetään viivadiagrammina. Diagrammin x-akselilla näkyvät päivämäärät ja
+                                y-akselilla lämpötilat.</p>
+                    </section>
+                    <section>
+                        <h3>Sovelluksen ulkoiset rajapinnat (APIt)</h3>
+                        <h4> Rest Countries </h4>
+                        <a class="link" href="https://restcountries.com/" target="_blank">restcountries.com</a>
+                        <p>Rest Countries -rajapintaa käytetään maan tietojen ja lipun hakemiseen. Sovelluksesta haetaan
+                            myös kohdemaan pääkaupungin koordinaatit, joita käytetään arvoina kartan ja sään
+                            tulosten hakemisessa rajapinnoista.</p>
+                    </section>
+                    <section>
+                        <h4>Open Street Map</h4>
+                        <a class="link" href="https://www.openstreetmap.org/about"
+                            target="_blank">openstreetmap.org/about</a>
+                        <p>Avoimen lähdekoodin rajapinta, jota voi käyttää myös kaupallisissa projekteissa, kunhan lähde
+                            mainitaan. Rajapinta perustuu vapaaehtoisten keräämään paikkatietodataan ja hyödyntää
+                            satelliittikuvia karttojen piirtämiseen.</p>
+                    </section>
+                    <section>
+                        <h4>Open-Meteo</h4>
+                        <a class="link" href="https://open-meteo.com/en" target="_blank">open-meteo.com/en</a>
+                        <p>Avoimen lähdekoodin rajapinta, joka on vapaasti hyödynnettävissä ei-kaupalliseen käyttöön.
+                            Rajapinnasta saa koordinaateilla hakemalla paikan tunneittain ilmoitetun ennusteen
+                            lämpötilasta,
+                            tuulennopeudesta sekä suhteellisesta ilmankosteudesta seuraavien seitsemän päivän
+                            ajalta.
+                            Tähän sovellukseen valitsimme näytettäväksi vain lämpötilan.
+                        </p>
+                    </section>
+                    <section>
+                        <h2 id="project-heading">Projektista</h2>
+                        <p>Web-sovellus on tehty kolmen hengen ryhmässä Metropolian tieto- ja viestintätekniikan
+                            opintojaksolla Webtekniikat ja digitaalinen media.</p>
+                    </section>
+                </div>
+            </div>
+
+            <main>
+                <div class="image-cont">
+                    <figure>
+                        <a class="group-members-link" href="./img/hafiz_img.jpg" data-lightbox="group-members-set" data-title="Hafiz">
+                            <img src="./img/hafiz_thumbnail.jpg" alt="Hafiz" />
+                            <div class="name">
+                                <h1>Hafiz</h1>
+                            </div>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a class="group-members-link" href="./img/iina.jpg" data-lightbox="group-members-set"
+                            data-title="Iina">
+                            <img src="./img/iina_thumbnail.jpg" alt="Iina" />
+                            <div class="name">
+                                <h1>Iina</h1>
+                            </div>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a class="group-members-link" href="./img/henrik.jpg" data-lightbox="group-members-set" data-title="Henrik">
+                            <img src="./img/henrik_thumbnail.jpg" alt="Henrik" />
+                            <div class="name">
+                                <h1>Henrik</h1>
+                            </div>
+                        </a>
+                    </figure>
+                </div>
+            </main>
+        </div>
+
+        <div id="footer-feature">
+            <footer>
+                <p>Your road to inspiration</p>
+                <img id="footer-image" src="./img/footer_image_collage_small.jpg" alt="image collage">
+                <p id="footer-logo">Vacationer</p>
+                <p>&copy; 2021 teamHIH</p>
+            </footer>
+        </div>
+
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+        <script src="./node_modules/lightbox2/dist/js/lightbox.js"></script>
+    </div>
+</body>
+</html>

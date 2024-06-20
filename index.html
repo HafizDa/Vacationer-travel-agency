@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vacationer</title>
+    <link rel="shortcut icon" type="image/png" href="./img/favicon_globe.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="page-container">
+        <header class="header-image">
+            <div id="logo"><a href="index.html">Vacationer</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="info.html">INFO</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1 id="page-heading-home">WHERE TO NEXT?</h1>
+                <p>Search through countries of the world and find your next travel destination</p>
+            </div>
+            <div class="search-feature">
+                <h2>SEARCH COUNTRY</h2>
+                <p>
+                    <input id="countrySearch" list="countries" name="countrySearch" type="search" />
+                    <datalist id="countries">
+                    </datalist>
+                    <button id="searchButton">Search</button>
+                </p>
+            </div>
+        </header>
+
+        <div id="cont">
+            <main>
+                <section>
+                    <ul id="countryDetails"></ul>
+                </section>
+            </main>
+            <aside>
+                <div id="mapsContainer">
+                    <div id="map"></div>
+                </div>
+            </aside>
+        </div>
+        <div id="weatherCont">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+    <div id="footer-feature">
+        <footer>
+            <p>Your road to inspiration</p>
+            <img id="footer-image" src="./img/footer_image_collage_small.jpg" alt="image collage">
+            <p id="footer-logo">Vacationer</p>
+            <p>&copy; 2021 teamHIH</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dropdownlist.js"></script>
+</body>
+</html>
